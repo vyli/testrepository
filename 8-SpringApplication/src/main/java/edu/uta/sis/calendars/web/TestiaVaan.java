@@ -43,8 +43,13 @@ public class TestiaVaan {
 
         CalendarEntity ce = new CalendarEntity();
         ce.setName("B-" + rand);
+
         calendarRepository.save(ce);
 
+        // Some cosmetic changes to test git
+        //---------------------------------------
+        String temp = "Testing: " + rand;
+        //------------------------------------
 
         EventEntity e = new EventEntity();
         e.setCalendar(ce);
